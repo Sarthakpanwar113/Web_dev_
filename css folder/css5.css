@@ -1,0 +1,47 @@
+p{
+    position: static;
+}
+
+div{
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+    border: 1px solid black;
+      
+}
+/* 
+.box{
+    position: relative;
+    left: 14px;
+    top: 14px;
+} */
+
+#box3{
+    position: relative;
+
+    top: 100px;
+    left: 50px;
+}
+
+
+/* for fixed positon */
+#box4{
+    position: fixed;
+    top: 500px;
+}
+
+/* absolute position */
+#box2{
+    position: absolute;
+    right: 95px;
+    /* yeh nearest position ancestor ke ho ; */
+    /* yeh by defalut abhi jo code mein hn  vo body ke respect mein han.  */
+
+
+}
+
+
+
+/* position sticky  */
+/* this element toggles between relative and fixed depending on the scroll position. */

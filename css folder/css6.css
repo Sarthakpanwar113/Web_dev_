@@ -1,0 +1,19 @@
+div{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    border: 1px solid black;
+}
+
+.translated{
+    transform: perspective(10px) translateZ(-10px);
+/* perspective means z (3) ko activate kar diya ; */
+
+}
+
+.scaled{
+    margin-left: 200px;
+    transform: perspective(355px) scaleZ(5) rotateX(45deg) rotateY(30deg);
+    /* isko rotate karna hoga taki 3rd angle se dekh sake  */
+
+}
