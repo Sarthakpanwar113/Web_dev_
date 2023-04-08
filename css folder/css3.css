@@ -1,0 +1,24 @@
+.box{
+    height: 100px;
+    width: 100px;
+    border:1px solid black;
+    margin: 10px;
+
+    /* content and border ke beech vale part ko padding khate hai  */
+    /* and border ke outer vale part ko margin khate hai  */
+
+    
+}
+
+#org{
+    background-color: orange;
+
+}
+
+#wht{
+    background-color: aqua;
+}
+
+#grn{
+    background-color: green ;
+}
