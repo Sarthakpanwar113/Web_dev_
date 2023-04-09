@@ -1,0 +1,111 @@
+TABLE ----------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table,tr,td,th{
+        border: 1px solid rebeccapurple;
+        border-collapse: collapse ; 
+        /* isse basically only one line ayega vo phale multiple line aa rha tha bcs of tr and td  */
+
+      }
+    </style>
+  </head>
+
+
+
+
+
+
+
+
+
+
+
+  <body>
+
+    <!-- now dicsuss about table  -->
+    <!-- column - td and row - tr  -->
+    <!-- to create table use tag table and for tr and for columns td  -->
+
+    <hr />
+    <table>
+        <caption>this is table</caption>
+        <!-- this is to add caption on the table  -->
+      <tr>
+        <td>month</td>
+        <td>savings</td>
+      </tr>
+      <tr>
+        <td>jaunuary</td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td>march</td>
+        <td>200</td>
+      </tr>
+      <tr>
+        <td>april</td>
+        <td>400</td>
+      </tr>
+    </table>
+
+    <hr />
+<!-- now  -->
+  <!-- table dekha hoga kaise hota hai so 
+
+  top row jo hota h  vo table heading hota hai and niche ke values vo
+  sb content of table hota hai then jo sbse niche hota hai vo summary hoti hai called table footer   -->
+
+it has been practice that table heading has been put under <thead></thead>
+and content is out under <tbody></tbody>
+while footer put under <tfoot></tfoot>
+
+<table>
+    <caption>this is table</caption>
+    <!-- this is to add caption on the table  -->
+  
+    <thead>
+        <tr>
+            <td>month</td>
+            <td>savings</td>
+            <!-- to bold them use <td></td> -->
+          </tr>
+    </thead>
+   <tbody>
+    <tr>
+        <td>jaunuary</td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td>march</td>
+        <td>200</td>
+      </tr>
+      <tr>
+        <td>april</td>
+        <td>400</td>
+      </tr>
+   </tbody>
+
+   <tfoot>
+    <tr>
+        <td>total</td>
+        <td>700</td>
+      </tr>
+   </tfoot>
+  
+</table>
+
+<hr />
+<!-- isse kuch farak nhi padega same he hoga but this is good practice  -->
+<!-- and thead ka na use karte huye <th></th> ka use karenge bcz of bold word in head of table  -->
+
+
+
+
+  </body>
+</html>
