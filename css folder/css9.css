@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+#wrapper{
+    height: 100vh;
+    overflow-y: auto;
+    /* y direction mein auto kar diya  */
+    overflow-x: hidden;
+    /* x direction mein bnd kar diya  */
+    perspective: 10px;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    z-index: 1; 
+    transform-style: preserve-3d;
+}
+
+.background{
+    transform: translateZ(-40px) scale(8);
+
+}
+.foreground{
+    transform: translateZ( -20px) scale(3);
+}
+
+.background,.foreground{
+    position: absolute;
+    /* overlap karvana tha  */
+    
+    z-index: -1;
+    object-fit: cover;
+    /* fit images in conatiner or widht cover kar leti hai */
+}
