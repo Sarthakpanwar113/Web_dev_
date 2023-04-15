@@ -1,0 +1,82 @@
+.container{
+    border: 1px solid brown;
+    background-color: yellow;
+
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px;
+    height: 700px;
+    width: 600px;
+
+
+    grid-gap: 10px;
+
+    /* justify-content: start; */
+    /* starting mein aa jayega  */
+
+    /* justify-content: end; */
+    /* end side mein aa jayega  */
+
+    /* justify-content: center; */
+    /* center mein aa jayega */
+
+    /* justify-content: space-between; */
+
+    /* justify-content: space-around; */
+    /* left and right mein aa jayega space  */
+
+    /* justify-content: space-evenly; */
+    /* equally divide  */
+
+    /* Align item  */
+
+    /* align-items: start; */
+    /* line ke upper place ho jayea top pe of row  */
+    
+
+    /* align-items: end; */
+    /* line end pe aa jayega row ke end mein  */
+
+
+    /* align-items: stretch; */
+    /* by default property hai .. stretch area le leta  */
+
+
+
+    /* justify-self:  and align-self are used in child  while justity-items will be used for parent; */
+    /* justify-self: content ke according chalta hai jitna bada content utna bada horizontal size ; */
+     
+    /* so ager we use justify-self : start then here content ke according humara box starting mein replace ho jayega ; */
+    /* while if we use justify-self: end then end mein aa jayega; */
+    /* same for center... it will apply for parent and item are applied for caontainer (parent) */
+
+
+
+    /* ager box ko center mein place karne ha toh we used align self and justify content as center  */
+
+
+     /* align-content:  -> row ke spacing ki baat kar rhe hai; */
+     /* vertical axis ke according content kaise placed hoga ---> align-items: ; */
+     /* justify-content: horizontal axis ke according kasie placed hoga ; */
+      /* child item ke anader ka content h vo kaise placed hoga vo baat karte hai ... -> justify-self: and align-self:  ;; */
+
+
+
+
+
+      place-content: center;  
+      /* same as justify-content:  and align-content: ko center karne se  ;; */
+
+
+
+      /* JC -> width or height pe anter nhi hoga, postion change ho jati bss  */
+      /* JI-> width jo hai change ho jayegi... width change according to content width  */
+      /* JS- box jo hai perticular vo specify to a box ke content hogi  */
+      
+
+}
+
+.box{
+    border: 1px solid red;
+    background-color: aqua;
+}
