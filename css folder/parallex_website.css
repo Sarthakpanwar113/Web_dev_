@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper{
+    /* wrapper ki height vo view port ka barabar hogi qki... wrapper ke ander he content hoga appna  */
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+    /* jo browser ki window han... iska or eye ka distance fixed kar diya ..like 10px  */
+
+}
+
+.container{
+    /* images are overlap so we used absolute  */
+    /* uske nearest ancestor ka according postioned ager vo non static hai then we can used absolute ho  */
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 3d attribute save ho preserve rahe  */
+    transform-style: preserve-3d;
+    z-index: -1;
+    
+
+}
+
+.background{
+    transform: translateZ(-40px) scale(5);
+    
+}
+
+.foreground{
+    transform: translateZ(-20px) scale();
+    
+}
+
+
+.background, .foreground{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* is prakar se strech kiya jata hn jisse acha lage thoda */
+    /* layering handle by z-index  */
+    z-index: -1;
+
+}
+/* -------------------------------------------------------------------------------- */
+
+h1{
+    position: absolute;
+    top: 5rem;
+    left: 50%;
+    
+    transform: translateX(-50%);
+    letter-spacing: 4px;
+    font-size: 10rem;
+    color: white;
+    text-shadow: 0 0 10px rbga(0,0,0,0.3);
+}
+
+section{
+    background-color: rgb(45, 45, 45);
+    color: white;
+    padding: 5rem 0;
+}
+
+.secHeading{
+    font-size: 5rem;
+    padding: 0 10rem;
+}
+.text{
+    font-size: 1.5rem;
+    padding: 0 10rem;
+    margin: 5rem 0;
+}
+.desc{
+    position: absolute;
+    background-color: white;
+    padding: 0.5rem 2.5rem;
+    top: 50%;
+    left: 37%;
+    color: black;
+    font-size: 3.5rem;
+    font-weight: 600px;
+    transform: translateX( -50%) ;
+}
+
+.bg{
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+    /* iamge vohi attrached ho jayegi  */
+    /* ager isko nhi use karte then image bhi sath mein move ho rhe hoti  */
+    background-size: cover;
+    /* viewport ke according cover kar paye  */
+    background-position: center;
+    
+    height: 500px;
+}
+
+.bg1{
+    background-image:url(https://img.freepik.com/free-vector/night-ocean-landscape-full-moon-stars-shine_107791-7397.jpg?w=1060&t=st=1681028067~exp=1681028667~hmac=faabc987a214bc6538eb7c636ccee4422aaff521d7e253ec46a159788b05d7c6)  ;
+
+}
+
+
+.bg2{
+    background-image: url(https://img.freepik.com/free-photo/bukhansan-mountains-is-covered-by-morning-fog-sunrise-bukhansan-national-park-seoul-south-korea_335224-305.jpg?w=1380&t=st=1681028223~exp=1681028823~hmac=01e79cefbe5bfd6ff6e22692a17e9764d5c3a5b4e436d1247df9d6cde6f1c6fe);
+}
+
+.bg3{
+    background-image: url(https://img.freepik.com/free-vector/cosmic-background-alien-planet-deserted-landscape-with-mountains_107791-6400.jpg?w=1380&t=st=1681028285~exp=1681028885~hmac=1b997610003a8ed4e776c692fe36294a48aa1556d05f675167a43fc2c27c1301);
+}
